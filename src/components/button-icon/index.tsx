@@ -8,7 +8,7 @@ type ButtonIconProps = TouchableOpacityProps & {
 export function ButtonIcon({ name, ...props }: ButtonIconProps) {
   return (
     <TouchableOpacity {...props}>
-      <MaterialIcons name={name} size={24} />
+      <MaterialIcons name={name} size={32} />
     </TouchableOpacity>
   )
 }

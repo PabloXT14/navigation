@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar'
 
-import { Home } from '@/app/home'
+// import { Home } from '@/app/home'
+import { Product } from '@/app/product'
 
 export default function App() {
   return (
     <>
-      <Home />
+      <Product />
       <StatusBar style="dark" />
     </>
   )
