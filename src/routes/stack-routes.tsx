@@ -7,7 +7,12 @@ const { Navigator, Screen } = createNativeStackNavigator()
 
 export function StackRoutes() {
   return (
-    <Navigator initialRouteName="home">
+    <Navigator
+      initialRouteName="home"
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
       <Screen component={Home} name="home" />
       <Screen component={Product} name="product" />
     </Navigator>
