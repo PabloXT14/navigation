@@ -1,15 +1,12 @@
 import { StyleSheet, View } from 'react-native'
-import type { NativeStackScreenProps } from '@react-navigation/native-stack'
 
 import { Header } from '@/components/header'
 import { Title } from '@/components/title'
 import { ButtonIcon } from '@/components/button-icon'
 
-import type { StackRoutesList } from '@/routes/stack-routes'
+import type { StackRoutesProps } from '@/routes/stack-routes'
 
-type HomeProps = NativeStackScreenProps<StackRoutesList, 'home'>
-
-export function Home({ navigation }: HomeProps) {
+export function Home({ navigation }: StackRoutesProps<'home'>) {
   function handleNavigateToProduct() {
     navigation.navigate('product')
   }
