@@ -8,7 +8,7 @@ import type { StackRoutesProps } from '@/routes/stack-routes'
 
 export function Home({ navigation }: StackRoutesProps<'home'>) {
   function handleNavigateToProduct() {
-    navigation.navigate('product')
+    navigation.navigate('product', { id: '7' })
   }
 
   return (

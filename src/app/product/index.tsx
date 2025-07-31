@@ -6,7 +6,7 @@ import { ButtonIcon } from '@/components/button-icon'
 
 import type { StackRoutesProps } from '@/routes/stack-routes'
 
-export function Product({ navigation }: StackRoutesProps<'product'>) {
+export function Product({ navigation, route }: StackRoutesProps<'product'>) {
   function handleGoBack() {
     navigation.goBack()
   }
@@ -16,7 +16,7 @@ export function Product({ navigation }: StackRoutesProps<'product'>) {
       <Header>
         <ButtonIcon name="arrow-circle-left" onPress={handleGoBack} />
 
-        <Title>Product</Title>
+        <Title>Product {route.params?.id}</Title>
       </Header>
     </View>
   )
