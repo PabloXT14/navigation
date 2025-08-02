@@ -4,9 +4,9 @@ import { Header } from '@/components/header'
 import { Title } from '@/components/title'
 import { ButtonIcon } from '@/components/button-icon'
 
-import type { BottomRoutesProps } from '@/routes/bottom-routes'
+import type { DrawerRouteProps } from '@/routes/drawer-routes'
 
-export function Home({ navigation }: BottomRoutesProps<'home'>) {
+export function Home({ navigation }: DrawerRouteProps<'home'>) {
   function handleNavigateToProduct() {
     navigation.navigate('product', { id: '7' })
   }

@@ -4,9 +4,9 @@ import { Header } from '@/components/header'
 import { Title } from '@/components/title'
 import { ButtonIcon } from '@/components/button-icon'
 
-import type { BottomRoutesProps } from '@/routes/bottom-routes'
+import type { DrawerRouteProps } from '@/routes/drawer-routes'
 
-export function Product({ navigation, route }: BottomRoutesProps<'product'>) {
+export function Product({ navigation, route }: DrawerRouteProps<'product'>) {
   function handleGoBack() {
     navigation.goBack()
   }
