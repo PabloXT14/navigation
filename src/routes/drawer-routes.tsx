@@ -22,6 +22,7 @@ export function DrawerRoutes() {
     <Navigator
       initialRouteName="home"
       screenOptions={{
+        headerShown: false,
         drawerActiveTintColor: '#10b981',
         drawerInactiveTintColor: '#71717a',
       }}

@@ -14,6 +14,8 @@ export function Home({ navigation }: DrawerRouteProps<'home'>) {
   return (
     <View style={styles.container}>
       <Header>
+        <ButtonIcon name="menu" onPress={() => navigation.toggleDrawer()} />
+
         <Title>Home</Title>
 
         <ButtonIcon name="add-circle" onPress={handleNavigateToProduct} />
